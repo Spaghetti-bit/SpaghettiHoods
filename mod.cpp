@@ -1,0 +1,11 @@
+name = "SpaghettiHoods";
+// picture = "";
+// logo = "";
+// logoSmall = "";
+// logoOver = "";
+tooltip = "SpaghettiHoods";
+// overview = "";
+// action = "";
+// author = "";
+// authorID = "";
+// version = "";
