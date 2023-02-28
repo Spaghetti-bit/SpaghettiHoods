@@ -36,4 +36,12 @@ class CfgVehicles
 			"FS_ECO01_pants_Pro"
 		};
 	};
+	class Spaghetti_FS_ECO01_Jacket_Blue: FS_ECO01_Jacket_ColorBase
+	{
+		suit[] =
+		{
+			"S13HeadDummy_Base",
+			"Spaghetti_FS_ECO01_pants_Blue"
+		};
+	};
 };

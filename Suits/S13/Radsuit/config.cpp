@@ -41,6 +41,14 @@ class CfgVehicles
 			"S13_Helmet_Exo_Duty"
 		};
 	};
+	class S13_RadsuitTop_Dolg2: Radsuit_Top_ColorBase
+	{
+		suit[] =
+		{
+			"S13_RadsuitPants_Dolg2",
+			"S13_Helmet_Exo_Duty2"
+		};
+	};
 	class S13_RadsuitTop_Mono: Radsuit_Top_ColorBase
 	{
 		suit[] =

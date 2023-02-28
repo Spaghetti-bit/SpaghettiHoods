@@ -32,6 +32,15 @@ class CfgVehicles
 			"S13_Helmet_Exo_Duty"
 		};
 	};
+	class NH_Exo_System_v1_Dolg2: NH_Exo_System_v1_BaseColor
+	{
+		suit[] =
+		{
+			"S13_RadsuitPants_Dolg2",
+			"S13_RadsuitTop_Dolg2",
+			"S13_Helmet_Exo_Duty2"
+		};
+	};
 	class NH_Exo_System_v1_Monolith3: NH_Exo_System_v1_BaseColor
 	{
 		suit[] =
