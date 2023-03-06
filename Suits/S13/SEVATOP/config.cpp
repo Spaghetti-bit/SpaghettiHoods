@@ -14,13 +14,15 @@ class CfgVehicles
 	class S13HeadDummy_SEVA;
 	class QuiltedJacket_ColorBase;
 
-	class s13_sevasuit_cb: QuiltedJacket_ColorBase
+	class S13_ArmorRepairSuitBase;
+	class s13_sevasuit_cb: S13_ArmorRepairSuitBase
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 	};
-
 	class S13_SEVATop_Free: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{
@@ -30,6 +32,7 @@ class CfgVehicles
 	};
 	class S13_SEVATop_Monolit: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{
@@ -39,6 +42,7 @@ class CfgVehicles
 	};
 	class S13_SEVATop_Loner1: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{
@@ -48,6 +52,7 @@ class CfgVehicles
 	};
 	class S13_SEVATop_Loner2: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{
@@ -57,6 +62,7 @@ class CfgVehicles
 	};
 	class S13_SEVATop_Duty: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{
@@ -66,6 +72,7 @@ class CfgVehicles
 	};
 	class S13_SEVATop_Merc: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{
@@ -75,6 +82,7 @@ class CfgVehicles
 	};
 	class S13_SEVATop_eco1: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{
@@ -84,6 +92,7 @@ class CfgVehicles
 	};
 	class S13_SEVATop_eco2: s13_sevasuit_cb
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitSEVA", "Body" };
 		BlockedSlots[] = {"Mask","Back","Vest"};
 		suit[] =
 		{

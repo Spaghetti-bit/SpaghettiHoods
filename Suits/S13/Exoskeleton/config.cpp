@@ -12,10 +12,15 @@ class CfgPatches
 class CfgVehicles
 {
 	class S13HeadDummy_Base;
-	class NH_Exo_System_v1_BaseColor;
+	class S13_ArmorRepairSuitBase;
+	class NH_Exo_System_v1_BaseColor: S13_ArmorRepairSuitBase 
+	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
+	};
 
 	class NH_Exo_System_v1_Svoboda2: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Freedom",
@@ -25,6 +30,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Dolg: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Dolg",
@@ -34,6 +40,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Dolg2: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Dolg2",
@@ -43,6 +50,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Monolith3: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Mono",
@@ -52,6 +60,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Voenstali: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Ecostalker",
@@ -61,6 +70,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Bandit: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Bandit",
@@ -70,6 +80,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Odinochka1: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Loner",
@@ -79,6 +90,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Odinochka2: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Stalker2",
@@ -88,6 +100,7 @@ class CfgVehicles
 	};
 	class NH_Exo_System_v1_Merc3: NH_Exo_System_v1_BaseColor
 	{
+		inventorySlot[] = { "S13_ArmorRepairKitExo", "Hips"};
 		suit[] =
 		{
 			"S13_RadsuitPants_Merc",

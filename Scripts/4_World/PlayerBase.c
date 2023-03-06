@@ -1,5 +1,34 @@
 modded class PlayerBase extends ManBase
 {
+    private const float BOLT_COOLDOWN = 5; // In seconds.
+    private float m_boltCurrentCD = 0.0;
+    private bool m_CanCreateBolt = true;
+    
+    override void CommandHandler(float pDt, int pCurrentCommandID, bool pCurrentCommandFinished)	
+	{
+		// lower implement 
+		super.CommandHandler(pDt,pCurrentCommandID,pCurrentCommandFinished);
+        ProcessBoltCooldown(pDt);
+    }
+    // ================================================ //
+    /*                      BOLTS                      */
+    // ================================================ //
+    void ProcessBoltCooldown(float pDt)
+    {
+        m_boltCurrentCD -= pDt;
+        m_boltCurrentCD = Math.Clamp(m_boltCurrentCD, 0, BOLT_COOLDOWN);
+        //Print("[Spaghetti Bolts] :: DEBUG :: Bolt CD? :: " + m_boltCurrentCD);
+        m_CanCreateBolt = m_boltCurrentCD <= 0.1; // ~5s (4.9s)
+        //Print("[Spaghetti Bolts] :: DEBUG :: Can Player Create Bolt? :: " + GetCanCreateBolt());
+    }
+    bool GetCanCreateBolt() { return m_CanCreateBolt; }
+    void ResetBoltCD()
+    {
+        m_boltCurrentCD = BOLT_COOLDOWN;
+    }
+    // ================================================ //
+    /*                     HOODS                        */
+    // ================================================ //
     override void OnConnect()
     {
         //TODO: UNCOMMENT FOR RELEASE
