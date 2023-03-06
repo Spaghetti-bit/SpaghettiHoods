@@ -20,7 +20,6 @@ class CfgSlots
 		selection = "S13_ArmorRepairKitSEVA";
 		show="true";
 	};
-
     class Slot_S13_ArmorRepairKitExo: Slot_Mask
 	{
 		name = "S13_ArmorRepairKitExo";
@@ -29,7 +28,6 @@ class CfgSlots
 		selection = "S13_ArmorRepairKitExo";
 		show="true";
 	};
-
     class Slot_S13_ArmorRepairKitExoPart: Slot_Mask
 	{
 		name = "S13_ArmorRepairKitExoPart";
