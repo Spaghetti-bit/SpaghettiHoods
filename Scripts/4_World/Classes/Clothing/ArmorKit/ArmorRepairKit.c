@@ -10,7 +10,6 @@ class S13_ArmorRepairKitBase: Clothing
     override bool CanReceiveAttachment( EntityAI attachment, int slotId )
 	{
 		ItemBase item = ItemBase.Cast( attachment );
-		
 		if (item.IsKindOf("S13_ArmorRepairSuitBase"))
         {
             return true;
@@ -27,17 +26,14 @@ class S13_ArmorRepairSuitBase: Clothing
         {
             return true;
         }
-
 		if (!super.CanPutAsAttachment(parent))
 		{
 			return false;
 		}
-		
 		if (!IsRuined() && !parent.IsRuined())
 		{
 			return true;
 		}
-
 		return false;
 	}
 }
@@ -51,17 +47,14 @@ class s13_sevasuit_cb: S13_ArmorRepairSuitBase
         {
             return true;
         }
-
 		if (!super.CanPutAsAttachment(parent))
 		{
 			return false;
 		}
-		
 		if (!IsRuined() && !parent.IsRuined())
 		{
 			return true;
 		}
-
 		return false;
 	}
 }
@@ -73,12 +66,10 @@ modded class NH_Exo_System_v1_BaseColor: S13_ArmorRepairSuitBase
         {
             return true;
         }
-
 		if (!super.CanPutAsAttachment(parent))
 		{
 			return false;
 		}
-		
 		if (!IsRuined() && !parent.IsRuined())
 		{
 			return true;
