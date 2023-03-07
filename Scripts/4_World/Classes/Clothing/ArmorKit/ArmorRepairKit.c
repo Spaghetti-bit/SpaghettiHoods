@@ -38,7 +38,6 @@ class S13_ArmorRepairSuitBase: Clothing
 	}
 }
 
-/*
 class s13_sevasuit_cb: S13_ArmorRepairSuitBase 
 {
 	override bool CanPutAsAttachment(EntityAI parent)
