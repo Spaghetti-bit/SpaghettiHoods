@@ -13,7 +13,6 @@ modded class MissionGameplay extends MissionBase
     override void OnKeyPress(int key)
 	{
 		super.OnKeyPress(key);
-
         PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
         if (player)
         {
@@ -23,7 +22,7 @@ modded class MissionGameplay extends MissionBase
             {
                 if (player.GetCanCreateBolt())
                 {
-                    Print("[Spaghetti Bolts] :: DEBUG :: Can Player Create Bolt? :: " + player.GetCanCreateBolt());
+                    //Print("[Spaghetti Bolts] :: DEBUG :: Can Player Create Bolt? :: " + player.GetCanCreateBolt());
                     player.ResetBoltCD();
                     Param1<int> params = new Param1<int>(key);
                     //Sending RPC (Client -> Server)

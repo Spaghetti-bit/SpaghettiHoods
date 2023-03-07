@@ -1,3 +1,4 @@
+/*
 modded class UnpackRadsuitLoner extends RecipeBase
 {
     override void Init()
